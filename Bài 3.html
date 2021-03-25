@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/BT/bt3.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="hoc wed chuan">
+        <meta name="keywords" content="HTML,javascrip,css,xml">
+        <meta name="auther" content="Quang">
+        
+        <title> Bài 3</title>
+        </head><body>
+            One particular book wthich is recommended <br>
+            reading is <u>The Street Lawyer</u> by <u>John Grisham</u>.<br>
+            This book is about a lawyer who begins re-<br>
+            evaluating his priorites in life when a bad <br>
+            incident occurs within his law firm. Consequently,<br>
+            he become acquainted with the inner city streets, <br>
+            and realizes the harsh existence of the homeless,<br>
+            and vows to give them a chance in the courts. <u>The</u><br>
+            <u>street Lawyer</u> is a <b>great</b> book. It is <b>well written</b><br>
+            and <b>interesting</b>. Other books by <u>John Grisham</u> <br>
+            include <u>The Firm</u>. <u>The Pelican Brief</u>, and <u>The Client</u>
+        <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+    
+</body></html>
