@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/BT/bt17.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt17</title>
+    <style>
+        body{
+            width: 1000px;
+            height: auto;
+            border: 1px solid springgreen;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2 align="center">Survey Form</h2>
+        <p>If you are interested in purchasing one or more of our products, before ordering please complete
+            some or all of the following survey for our marketing department. Answering any question is
+            optional, and all information will be kept strictly confidential. Thank you very much for your time!</p>
+            <ol type="1">
+                <li>What is your name?</li>
+                <input type="text" name="txt"><br>
+                <li>What is your date of birth?</li>
+                <label id="month">Month: </label>
+                <select for="month">
+                    <option value="thang1">January</option>
+                    <option value="thang2">February</option>
+                    <option value="thang3">March</option>
+                    <option value="thang4">April</option>
+                    <option value="thang5">May</option>
+                    <option value="thang6">June</option>
+                    <option value="thang7">July</option>
+                    <option value="thang8">August</option>
+                    <option value="thang9">September</option>
+                    <option value="thang10">October</option>
+                    <option value="thang11">November</option>
+                    <option value="thang12">December</option>
+                </select>
+                <label id="date">Date: </label>
+                <select name="date" for="date">\
+                    <option value="ngay 1">1</option>
+                    <option value="ngay 2">2</option>
+                    <option value="ngay 2">3</option>
+                    </select>
+                    <label id="year">Year: </label>
+                <select name="year" id="year">
+                    <option value="2020">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2020">2021</option>
+                    <option value="2020">2022</option>
+                </select>
+                <li>What is your email address?</li>
+                <input type="text"> <br>
+                <li>Have you viewed out online product cataloct</li>
+                <input type="radio" name="" id="yes">
+                <label for="yes">yes</label>
+                <input type="radio" name="" id="no">
+                <label for="no">No</label>
+                <li>If so, what product(s), beside the one you are ordering, might you
+                    be interested in purchasing in the future? (Check all that apply.)
+                </li>
+                <input type="checkbox" name="vcr" id="vcr">
+                <label for="vcr">VCR</label><br>
+                <input type="checkbox" name="tv" id="tv">
+                <label for="tv">Big Screen TVR</label><br>
+                <input type="checkbox" name="audio" id="audio">
+                <label for="audio">Audio Equipment</label><br>
+                <input type="checkbox" name="video" id="video">
+                <label for="video">Video Equipment</label><br>
+                <input type="checkbox" name="camera" id="camera">
+                <label for="camera">Camera Equipment</label><br>
+                <input type="checkbox" name="other" id="other">
+                <label for="other">Other</label>
+                <input type="text" for="other"><br>
+                <li>Do you have any questions, comments or suggestions before proceeding
+                    to the Order Form?
+                </li>
+                <textarea name="txtarea" id="" cols="50" rows="10"></textarea>
+
+            </ol>
+            <div align="center">
+                <input type="button" value="Send Form">  
+                <input type="button" value="Clear Form">
+            </div>
+    </form>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
